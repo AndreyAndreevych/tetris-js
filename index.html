@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tetris</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/my-js.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="game-field">
+			<div class="game-field_line">
+				<div id="line_0_cell_0"></div>
+				<div id="line_0_cell_1"></div>
+				<div id="line_0_cell_2"></div>
+				<div id="line_0_cell_3"></div>
+				<div id="line_0_cell_4"></div>
+				<div id="line_0_cell_5"></div>
+				<div id="line_0_cell_6"></div>
+				<div id="line_0_cell_7"></div>
+				<div id="line_0_cell_8"></div>
+				<div id="line_0_cell_9"></div>
+			</div>
+			<div class="game-field_line">
+				<div id="line_1_cell_0"></div>
+				<div id="line_1_cell_1"></div>
+				<div id="line_1_cell_2"></div>
+				<div id="line_1_cell_3"></div>
+				<div id="line_1_cell_4"></div>
+				<div id="line_1_cell_5"></div>
+				<div id="line_1_cell_6"></div>
+				<div id="line_1_cell_7"></div>
+				<div id="line_1_cell_8"></div>
+				<div id="line_1_cell_9"></div>
+			</div>
+			<div class="game-field_line">
+				<div id="line_2_cell_0"></div>
+				<div id="line_2_cell_1"></div>
+				<div id="line_2_cell_2"></div>
+				<div id="line_2_cell_3"></div>
+				<div id="line_2_cell_4"></div>
+				<div id="line_2_cell_5"></div>
+				<div id="line_2_cell_6"></div>
+				<div id="line_2_cell_7"></div>
+				<div id="line_2_cell_8"></div>
+				<div id="line_2_cell_9"></div>
+			</div>
+			<div class="game-field_line">
+				<div id="line_3_cell_0"></div>
+				<div id="line_3_cell_1"></div>
+				<div id="line_3_cell_2"></div>
+				<div id="line_3_cell_3"></div>
+				<div id="line_3_cell_4"></div>
+				<div id="line_3_cell_5"></div>
+				<div id="line_3_cell_6"></div>
+				<div id="line_3_cell_7"></div>
+				<div id="line_3_cell_8"></div>
+				<div id="line_3_cell_9"></div>
+			</div>
+			<div class="game-field_line">
+				<div id="line_4_cell_0"></div>
+				<div id="line_4_cell_1"></div>
+				<div id="line_4_cell_2"></div>
+				<div id="line_4_cell_3"></div>
+				<div id="line_4_cell_4"></div>
+				<div id="line_4_cell_5"></div>
+				<div id="line_4_cell_6"></div>
+				<div id="line_4_cell_7"></div>
+				<div id="line_4_cell_8"></div>
+				<div id="line_4_cell_9"></div>
+			</div>
+			<div class="game-field_line">
+				<div id="line_5_cell_0"></div>
+				<div id="line_5_cell_1"></div>
+				<div id="line_5_cell_2"></div>
+				<div id="line_5_cell_3"></div>
+				<div id="line_5_cell_4"></div>
+				<div id="line_5_cell_5"></div>
+				<div id="line_5_cell_6"></div>
+				<div id="line_5_cell_7"></div>
+				<div id="line_5_cell_8"></div>
+				<div id="line_5_cell_9"></div>
+			</div>
+			<div class="game-field_line">
+				<div id="line_6_cell_0"></div>
+				<div id="line_6_cell_1"></div>
+				<div id="line_6_cell_2"></div>
+				<div id="line_6_cell_3"></div>
+				<div id="line_6_cell_4"></div>
+				<div id="line_6_cell_5"></div>
+				<div id="line_6_cell_6"></div>
+				<div id="line_6_cell_7"></div>
+				<div id="line_6_cell_8"></div>
+				<div id="line_6_cell_9"></div>
+			</div>
+			<div class="game-field_line">
+				<div id="line_7_cell_0"></div>
+				<div id="line_7_cell_1"></div>
+				<div id="line_7_cell_2"></div>
+				<div id="line_7_cell_3"></div>
+				<div id="line_7_cell_4"></div>
+				<div id="line_7_cell_5"></div>
+				<div id="line_7_cell_6"></div>
+				<div id="line_7_cell_7"></div>
+				<div id="line_7_cell_8"></div>
+				<div id="line_7_cell_9"></div>
+			</div>
+			<div class="game-field_line">
+				<div id="line_8_cell_0"></div>
+				<div id="line_8_cell_1"></div>
+				<div id="line_8_cell_2"></div>
+				<div id="line_8_cell_3"></div>
+				<div id="line_8_cell_4"></div>
+				<div id="line_8_cell_5"></div>
+				<div id="line_8_cell_6"></div>
+				<div id="line_8_cell_7"></div>
+				<div id="line_8_cell_8"></div>
+				<div id="line_8_cell_9"></div>
+			</div>
+			<div class="game-field_line">
+				<div id="line_9_cell_0"></div>
+				<div id="line_9_cell_1"></div>
+				<div id="line_9_cell_2"></div>
+				<div id="line_9_cell_3"></div>
+				<div id="line_9_cell_4"></div>
+				<div id="line_9_cell_5"></div>
+				<div id="line_9_cell_6"></div>
+				<div id="line_9_cell_7"></div>
+				<div id="line_9_cell_8"></div>
+				<div id="line_9_cell_9"></div>
+			</div>
+			<div class="game-field_line">
+				<div id="line_10_cell_0"></div>
+				<div id="line_10_cell_1"></div>
+				<div id="line_10_cell_2"></div>
+				<div id="line_10_cell_3"></div>
+				<div id="line_10_cell_4"></div>
+				<div id="line_10_cell_5"></div>
+				<div id="line_10_cell_6"></div>
+				<div id="line_10_cell_7"></div>
+				<div id="line_10_cell_8"></div>
+				<div id="line_10_cell_9"></div>
+			</div>
+			<div class="game-field_line">
+				<div id="line_11_cell_0"></div>
+				<div id="line_11_cell_1"></div>
+				<div id="line_11_cell_2"></div>
+				<div id="line_11_cell_3"></div>
+				<div id="line_11_cell_4"></div>
+				<div id="line_11_cell_5"></div>
+				<div id="line_11_cell_6"></div>
+				<div id="line_11_cell_7"></div>
+				<div id="line_11_cell_8"></div>
+				<div id="line_11_cell_9"></div>
+			</div>
+			<div class="game-field_line">
+				<div id="line_12_cell_0"></div>
+				<div id="line_12_cell_1"></div>
+				<div id="line_12_cell_2"></div>
+				<div id="line_12_cell_3"></div>
+				<div id="line_12_cell_4"></div>
+				<div id="line_12_cell_5"></div>
+				<div id="line_12_cell_6"></div>
+				<div id="line_12_cell_7"></div>
+				<div id="line_12_cell_8"></div>
+				<div id="line_12_cell_9"></div>
+			</div>
+			<div class="game-field_line">
+				<div id="line_13_cell_0"></div>
+				<div id="line_13_cell_1"></div>
+				<div id="line_13_cell_2"></div>
+				<div id="line_13_cell_3"></div>
+				<div id="line_13_cell_4"></div>
+				<div id="line_13_cell_5"></div>
+				<div id="line_13_cell_6"></div>
+				<div id="line_13_cell_7"></div>
+				<div id="line_13_cell_8"></div>
+				<div id="line_13_cell_9"></div>
+			</div>
+			<div class="game-field_line">
+				<div id="line_14_cell_0"></div>
+				<div id="line_14_cell_1"></div>
+				<div id="line_14_cell_2"></div>
+				<div id="line_14_cell_3"></div>
+				<div id="line_14_cell_4"></div>
+				<div id="line_14_cell_5"></div>
+				<div id="line_14_cell_6"></div>
+				<div id="line_14_cell_7"></div>
+				<div id="line_14_cell_8"></div>
+				<div id="line_14_cell_9"></div>
+			</div>
+			<div class="game-field_line">
+				<div id="line_15_cell_0"></div>
+				<div id="line_15_cell_1"></div>
+				<div id="line_15_cell_2"></div>
+				<div id="line_15_cell_3"></div>
+				<div id="line_15_cell_4"></div>
+				<div id="line_15_cell_5"></div>
+				<div id="line_15_cell_6"></div>
+				<div id="line_15_cell_7"></div>
+				<div id="line_15_cell_8"></div>
+				<div id="line_15_cell_9"></div>
+			</div>
+			<div class="game-field_line">
+				<div id="line_16_cell_0"></div>
+				<div id="line_16_cell_1"></div>
+				<div id="line_16_cell_2"></div>
+				<div id="line_16_cell_3"></div>
+				<div id="line_16_cell_4"></div>
+				<div id="line_16_cell_5"></div>
+				<div id="line_16_cell_6"></div>
+				<div id="line_16_cell_7"></div>
+				<div id="line_16_cell_8"></div>
+				<div id="line_16_cell_9"></div>
+			</div>
+			<div class="game-field_line">
+				<div id="line_17_cell_0"></div>
+				<div id="line_17_cell_1"></div>
+				<div id="line_17_cell_2"></div>
+				<div id="line_17_cell_3"></div>
+				<div id="line_17_cell_4"></div>
+				<div id="line_17_cell_5"></div>
+				<div id="line_17_cell_6"></div>
+				<div id="line_17_cell_7"></div>
+				<div id="line_17_cell_8"></div>
+				<div id="line_17_cell_9"></div>
+			</div>
+			<div class="game-field_line">
+				<div id="line_18_cell_0"></div>
+				<div id="line_18_cell_1"></div>
+				<div id="line_18_cell_2"></div>
+				<div id="line_18_cell_3"></div>
+				<div id="line_18_cell_4"></div>
+				<div id="line_18_cell_5"></div>
+				<div id="line_18_cell_6"></div>
+				<div id="line_18_cell_7"></div>
+				<div id="line_18_cell_8"></div>
+				<div id="line_18_cell_9"></div>
+			</div>
+			<div class="game-field_line">
+				<div id="line_19_cell_0"></div>
+				<div id="line_19_cell_1"></div>
+				<div id="line_19_cell_2"></div>
+				<div id="line_19_cell_3"></div>
+				<div id="line_19_cell_4"></div>
+				<div id="line_19_cell_5"></div>
+				<div id="line_19_cell_6"></div>
+				<div id="line_19_cell_7"></div>
+				<div id="line_19_cell_8"></div>
+				<div id="line_19_cell_9"></div>
+			</div>
+		</div>
+		<div id="game-field_next">
+			<div class="game-field_line">
+				<div id="next-line_0_cell_0"></div>
+				<div id="next-line_0_cell_1"></div>
+				<div id="next-line_0_cell_2"></div>
+				<div id="next-line_0_cell_3"></div>
+			</div>
+			<div class="game-field_line">
+				<div id="next-line_1_cell_0"></div>
+				<div id="next-line_1_cell_1"></div>
+				<div id="next-line_1_cell_2"></div>
+				<div id="next-line_1_cell_3"></div>
+			</div>
+			<div class="game-field_line">
+				<div id="next-line_2_cell_0"></div>
+				<div id="next-line_2_cell_1"></div>
+				<div id="next-line_2_cell_2"></div>
+				<div id="next-line_2_cell_3"></div>
+			</div>
+			<div class="game-field_line">
+				<div id="next-line_3_cell_0"></div>
+				<div id="next-line_3_cell_1"></div>
+				<div id="next-line_3_cell_2"></div>
+				<div id="next-line_3_cell_3"></div>
+			</div>
+			<p>Score:<span id="score"> 0</span></p>
+			<div id="end-game">
+				<h3 id="game-over">game over</h3>
+				<p>Your score <span id="score-end">0</span> points</p>
+				<input type="button" id="restart-button" value="restart">
+			</div>
+		</div>
+		<input type="button" id="start-button" value="start">	
+	</div>
+</body>
+</html>
