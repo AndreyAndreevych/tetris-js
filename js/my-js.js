@@ -298,6 +298,8 @@ function restart () {
         $("#end-game").css("display", "none");
         $("#start-button").prop("disabled", false);
         score = 0;
+        $("#score").text(score);
+        $("#score-end").text(score);
         time = 1000;
         for(var i = 0; i < 20; i++) {
             for(var j = 0; j < 10; j++) {
